@@ -1,0 +1,16 @@
+[
+{
+  "modid": "Smithcraft",
+  "name": "Smithcraft",
+  "description": "Turning metal into useful stuff est. a long time ago",
+  "version": "dev_0.0.1",
+  "mcversion": "1.7.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["MajhenriquBoss"],
+  "credits": "The Forge and MCP teams, for making this mod possible",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": [ "mod_MinecraftForge" ]
+}
+]

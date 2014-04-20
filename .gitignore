@@ -1,12 +1,14 @@
 .gradle/
+build/
 eclipse/
 gradle/
-build/
+Minecraft/
+out/
 
-*.txt
 gradlew
-gradlew.bat
-build.gradle
+*.txt
+*.bat
+*.gradle
 *.iml
 *.ipr
 *.iws

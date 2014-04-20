@@ -1,0 +1,18 @@
+itemGroup.tabSmithcraft=Smithcraft
+
+item.Hammer.name=Hammer
+item.BlacksmithCoal.name=Blacksmith's Coal
+item.IngotCopper.name=Copper Ingot
+item.IngotTin.name=Tin Ingot
+item.IngotSilver.name=Silver Ingot
+
+tile.Forge.name=Forge
+tile.OreCopper.name=Copper Ore
+tile.OreTin.name=Tin Ore
+tile.OreSilver.name=Silver Ore
+
+tile.MoltenCopper.name=Molten Copper
+tile.MoltenTin.name=Molten Tin
+tile.MoltenSilver.name=Molten Silver
+tile.MoltenGold.name=Molten Gold
+tile.MoltenIron.name=Molten Iron
