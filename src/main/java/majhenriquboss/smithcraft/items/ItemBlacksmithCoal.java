@@ -4,6 +4,8 @@ import cpw.mods.fml.common.IFuelHandler;
 import majhenriquboss.smithcraft.Smithcraft;
 import majhenriquboss.smithcraft.lib.Strings;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
 /**
@@ -19,7 +21,7 @@ public class ItemBlacksmithCoal extends ItemSC implements IFuelHandler {
 
     @Override
     public int getBurnTime(ItemStack itemStack) {
-        return 2000;
+        return 6400;
     }
 
     @Override

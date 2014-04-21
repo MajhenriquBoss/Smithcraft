@@ -2,7 +2,10 @@ package majhenriquboss.smithcraft.client.renderers;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import majhenriquboss.smithcraft.Smithcraft;
 import majhenriquboss.smithcraft.client.models.ModelAnvil;
+import majhenriquboss.smithcraft.lib.Strings;
+import majhenriquboss.smithcraft.lib.Textures;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.entity.Entity;
 import net.minecraft.tileentity.TileEntity;
@@ -17,7 +20,7 @@ import org.lwjgl.opengl.GL11;
 public class AnvilRenderer extends TileEntitySpecialRenderer {
 
     private final ModelAnvil model;
-    private final ResourceLocation texture = new ResourceLocation("smithcraft", "textures/blocks/anvilStone.png");
+    private final ResourceLocation texture = Textures.ANVIL;
 
     public AnvilRenderer() {
         model = new ModelAnvil();

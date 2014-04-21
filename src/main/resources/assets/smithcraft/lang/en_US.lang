@@ -7,6 +7,7 @@ item.IngotTin.name=Tin Ingot
 item.IngotSilver.name=Silver Ingot
 
 tile.Forge.name=Forge
+tile.AnvilStone.name=Stone Anvil
 tile.OreCopper.name=Copper Ore
 tile.OreTin.name=Tin Ore
 tile.OreSilver.name=Silver Ore

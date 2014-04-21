@@ -1,7 +1,9 @@
 package majhenriquboss.smithcraft.proxy;
 
 import cpw.mods.fml.client.registry.ClientRegistry;
+import majhenriquboss.smithcraft.client.renderers.AnvilRenderer;
 import majhenriquboss.smithcraft.client.renderers.ForgeRenderer;
+import majhenriquboss.smithcraft.tileentities.TileEntityAnvilStone;
 import majhenriquboss.smithcraft.tileentities.TileEntityForge;
 
 /**
@@ -18,6 +20,7 @@ public class ClientProxy extends CommonProxy {
     @Override
     public void initRenderers() {
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityForge.class, new ForgeRenderer());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAnvilStone.class, new AnvilRenderer());
     }
 
 }

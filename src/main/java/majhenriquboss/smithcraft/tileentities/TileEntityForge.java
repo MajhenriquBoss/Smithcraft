@@ -6,6 +6,7 @@ import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraftforge.common.util.ForgeDirection;
 
 /**
 *@author MajhenriquBoss
@@ -14,6 +15,7 @@ import net.minecraft.tileentity.TileEntity;
 public class TileEntityForge extends TileEntity implements IInventory {
 
     private ItemStack[] inv;
+    public int orientation;
 
     public TileEntityForge() {
         inv = new ItemStack[2];

@@ -9,10 +9,14 @@ import majhenriquboss.smithcraft.tileentities.TileEntityForge;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ChatComponentText;
+import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
+import net.minecraftforge.common.util.ForgeDirection;
 
 import java.util.Random;
 
@@ -43,12 +47,34 @@ public class BlockForge extends BlockContainer {
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float par1, float par2, float par3) {
         if (!world.isRemote) {
             if (!player.isSneaking()) {
-                player.addChatMessage(new ChatComponentText("[Smithcraft] [Forge] It Works! The problem is the GUI"));
                 FMLNetworkHandler.openGui(player, Smithcraft.instance, 0, world, x, y, z);
                 return true;
             }
         }
         return false;
+    }
+
+    @Override
+    public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack stack) {
+        TileEntityForge tile = (TileEntityForge)world.getTileEntity(x, y, z);
+        int l = MathHelper.floor_double((double)(entity.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;
+
+        if (l == 0) {
+            tile.orientation = 2;
+        }
+
+        if (l == 1) {
+            tile.orientation = 5;
+        }
+
+        if (l == 2) {
+            tile.orientation = 3;
+        }
+
+        if (l == 3) {
+            tile.orientation = 4;
+        }
+        if (world.isRemote) { System.out.println(tile.orientation); }
     }
 
     @Override

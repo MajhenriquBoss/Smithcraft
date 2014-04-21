@@ -7,10 +7,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
-import majhenriquboss.smithcraft.blocks.BlockForge;
-import majhenriquboss.smithcraft.blocks.BlockOreCopper;
-import majhenriquboss.smithcraft.blocks.BlockOreSilver;
-import majhenriquboss.smithcraft.blocks.BlockOreTin;
+import majhenriquboss.smithcraft.blocks.*;
 import majhenriquboss.smithcraft.fluids.*;
 import majhenriquboss.smithcraft.fluids.blocks.*;
 import majhenriquboss.smithcraft.handlers.GuiHandler;
@@ -61,6 +58,7 @@ public class Smithcraft {
     public static BlockMoltenSilver moltenSilver;
     public static BlockMoltenGold moltenGold;
     public static BlockMoltenIron moltenIron;
+    public static BlockAnvilStone anvilStone;
 
     /* FLUID OBJECTS */
     public static FluidMoltenCopper fluidMoltenCopper;
@@ -80,6 +78,7 @@ public class Smithcraft {
 
         blacksmithCoal = new ItemBlacksmithCoal();
         GameRegistry.registerItem(blacksmithCoal, Strings.Items.BLACKSMITH_COAL);
+        GameRegistry.registerFuelHandler(blacksmithCoal);
 
         ingotCopper = new ItemIngotCopper();
         GameRegistry.registerItem(ingotCopper, Strings.Items.INGOT_COPPER);
@@ -141,11 +140,15 @@ public class Smithcraft {
         moltenIron = new BlockMoltenIron(fluidMoltenIron, Material.lava);
         GameRegistry.registerBlock(moltenIron, Strings.Fluids.MOLTEN_IRON);
 
+        anvilStone = new BlockAnvilStone(Material.rock);
+        GameRegistry.registerBlock(anvilStone, Strings.Blocks.ANVIL_STONE);
+
     }
 
     @Mod.EventHandler
     public static void init(FMLInitializationEvent event) {
         clientProxy.initRenderers();
+        CraftingManager.registerRecipes();
     }
 
     @Mod.EventHandler

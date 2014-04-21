@@ -1,5 +1,8 @@
 package majhenriquboss.smithcraft.lib;
 
+import majhenriquboss.smithcraft.Smithcraft;
+import net.minecraft.util.ResourceLocation;
+
 /**
 *@author MajhenriquBoss
 */
@@ -11,6 +14,7 @@ public class Strings {
         public static final String ORE_COPPER = "OreCopper";
         public static final String ORE_TIN = "OreTin";
         public static final String ORE_SILVER = "OreSilver";
+        public static final String ANVIL_STONE = "AnvilStone";
     }
 
     public class Items {
