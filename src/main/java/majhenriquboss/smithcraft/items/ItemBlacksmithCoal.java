@@ -1,11 +1,8 @@
 package majhenriquboss.smithcraft.items;
 
 import cpw.mods.fml.common.IFuelHandler;
-import majhenriquboss.smithcraft.Smithcraft;
 import majhenriquboss.smithcraft.lib.Strings;
 import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
 /**

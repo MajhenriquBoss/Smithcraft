@@ -1,6 +1,5 @@
 package majhenriquboss.smithcraft.client.renderers;
 
-import majhenriquboss.smithcraft.Smithcraft;
 import majhenriquboss.smithcraft.client.models.ModelEntityBlacksmith;
 import majhenriquboss.smithcraft.lib.Textures;
 import net.minecraft.client.Minecraft;

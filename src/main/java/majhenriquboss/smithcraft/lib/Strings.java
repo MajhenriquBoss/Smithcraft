@@ -1,8 +1,5 @@
 package majhenriquboss.smithcraft.lib;
 
-import majhenriquboss.smithcraft.Smithcraft;
-import net.minecraft.util.ResourceLocation;
-
 /**
 *@author MajhenriquBoss
 */
@@ -23,6 +20,7 @@ public class Strings {
         public static final String INGOT_COPPER = "IngotCopper";
         public static final String INGOT_TIN = "IngotTin";
         public static final String INGOT_SILVER = "IngotSilver";
+        public static final String PLATE_IRON = "PlateIron";
     }
 
     public class Fluids {

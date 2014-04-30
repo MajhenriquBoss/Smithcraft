@@ -1,6 +1,5 @@
 package majhenriquboss.smithcraft.client.renderers;
 
-import majhenriquboss.smithcraft.Smithcraft;
 import majhenriquboss.smithcraft.client.models.ModelForge;
 import majhenriquboss.smithcraft.lib.Textures;
 import majhenriquboss.smithcraft.tileentities.TileEntityForge;

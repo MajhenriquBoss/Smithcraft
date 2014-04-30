@@ -47,6 +47,7 @@ public class Smithcraft {
     public static ItemIngotCopper ingotCopper;
     public static ItemIngotTin ingotTin;
     public static ItemIngotSilver ingotSilver;
+    public static ItemIronPlate ironPlate;
 
     /* BLOCK OBJECTS */
     public static BlockForge forge;
@@ -91,6 +92,9 @@ public class Smithcraft {
         ingotSilver = new ItemIngotSilver();
         GameRegistry.registerItem(ingotSilver, Strings.Items.INGOT_SILVER);
         OreDictionary.registerOre("ingotSilver", ingotSilver);
+
+        ironPlate = new ItemIronPlate();
+        GameRegistry.registerItem(ironPlate, Strings.Items.PLATE_IRON);
 
         /* REGISTER FLUIDS */
         fluidMoltenCopper = new FluidMoltenCopper(Strings.Fluids.MOLTEN_COPPER);

@@ -5,6 +5,7 @@ item.BlacksmithCoal.name=Blacksmith's Coal
 item.IngotCopper.name=Copper Ingot
 item.IngotTin.name=Tin Ingot
 item.IngotSilver.name=Silver Ingot
+item.PlateIron.name=Iron Plate
 
 tile.Forge.name=Forge
 tile.AnvilStone.name=Stone Anvil

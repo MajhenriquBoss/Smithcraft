@@ -1,9 +1,6 @@
 package majhenriquboss.smithcraft;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import majhenriquboss.smithcraft.blocks.BlockOreCopper;
-import majhenriquboss.smithcraft.items.ItemIngotCopper;
-import net.minecraft.block.material.Material;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 

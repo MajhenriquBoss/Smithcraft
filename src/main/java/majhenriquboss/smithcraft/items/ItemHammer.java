@@ -1,6 +1,5 @@
 package majhenriquboss.smithcraft.items;
 
-import cpw.mods.fml.common.IFuelHandler;
 import majhenriquboss.smithcraft.lib.Strings;
 import net.minecraft.block.Block;
 import net.minecraft.entity.EntityLivingBase;
